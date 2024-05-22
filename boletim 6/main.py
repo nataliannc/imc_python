@@ -11,7 +11,4 @@ if nota >= 7:
 elif nota >= 5: #se não se
     print(f"{nome} está de recuperação(a).")
 else:
-    print(f"{nome} está reprovado.(a)")
-
-
-
+    print(f"{nome} está reprovado(a).")

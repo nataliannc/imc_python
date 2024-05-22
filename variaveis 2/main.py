@@ -3,7 +3,7 @@
 nome = 'Natália' #string
 idade = 28 #int
 altura = 1.63 #ponto flutuante = float
-programador = False #booleano (iniciar com letra maiúscula
+programador = False #booleano (inicia com letra maiúscula)
 
 #saída de dados
 #usa-se str() para transformar uma variável int em string
@@ -22,4 +22,3 @@ print(type(nome))
 print(type(idade))
 print(type(altura))
 print(type(programador))
-
