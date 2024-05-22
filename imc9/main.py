@@ -2,9 +2,7 @@
 Crie um programa que calcula o IMC do usuário.
 '''
 
-#outra opção para converter str para float:
-#peso = peso.replace(",",".")
-#altura = altura.replace(",",".")
+#outra opção para converter str para float -> peso = peso.replace(",",".")
 
 nome = input("Qual é o seu nome?")
 peso = str(input("Qual é o seu peso?")).replace(',','.')
@@ -20,13 +18,13 @@ IMC = float(IMC)
 
 if IMC < 18.5:
     print(f"O seu IMC é {IMC:,.2f}. Você está abaixo do peso normal. Coma mais um pouco.")
-elif IMC > 18.5 and IMC < 24.9:
+elif IMC > 18.5:
     print(f"O seu IMC é {IMC:,.2f}. Você está com o peso normal. Parabéns!")
-elif IMC > 25.0 and IMC < 29.9:
+elif IMC > 25.0:
     print(f"O seu IMC é {IMC:,.2f}. Você está com excesso de peso. Cuidado, coma menos!")
-elif IMC > 30.0 and IMC < 34.9:
+elif IMC > 30.0:
     print(f"O seu IMC é {IMC:,.2f}. Você está com obesidade classe I. Faça mais exercício físico.")
-elif IMC > 35.0 and IMC <39.9:
+elif IMC > 35.0:
     print(f"O seu IMC é {IMC:,.2f}. Você está com obesidade classe II. Coma comida saúdavel e faça exercício físico.")
 elif IMC >= 40.0:
     print(f"O seu IMC é {IMC:,.2f}. Você está com obesidade classe III. Atenção!!! Coma comida saúdavel e faça exercício físico.")

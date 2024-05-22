@@ -3,6 +3,7 @@ import os
 import time
 
 contador = int(input("Informe um número inteiro:"))
+
 #permite acessar o promp de comando
 os.system('cls')
 

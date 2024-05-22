@@ -5,4 +5,3 @@ try:
     print(f"O resultado é {result}.")
 except:
     print(f"Não foi possível calcular.")
-

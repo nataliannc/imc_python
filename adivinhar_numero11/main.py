@@ -1,5 +1,4 @@
 #adivinhe o número
-
 numero = int(input("Qual é o número que eu estou pensando?"))
 
 if numero == 5:
