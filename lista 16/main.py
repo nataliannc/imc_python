@@ -2,7 +2,6 @@
 
 nomes = ["Alex", "Simone", "Bernardo", "César", "Alexandra"]
 
-"Primeira instrução"
 #exibe a lista na tela
 print(nomes)
 
@@ -21,7 +20,6 @@ for i in range(3): #foi declarada a variavel i, 3 exibe os 3 primeiros elementos
 #len é uma função para medir o tamanho da variavel quando não se sabe o tamanho dela
 for i in range(len(nomes)):
     print(nomes[i])
-
 
 for i in range(len(nomes)):
     print(f'{i + 1}º nome da lista: {nomes[i]}.')
