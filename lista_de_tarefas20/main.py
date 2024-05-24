@@ -2,6 +2,7 @@
 Crie um programa onde o usuário cria uma lista de tarefas a ser executada no dia. 
 Ao terminar, crie um repositorio local e suba para o repositório remoto no GitHub.
 '''
+import os
 
 #lista vazia
 tarefas = []
@@ -16,6 +17,12 @@ while True:
         continue
     else:
         break
+
+#limpa console
+os.system('cls')
+
+#exibe a lista de tarefas
+print(f"{'-'*30} LISTA DE TAREFAS {'-'*30}\n")
 
 #exibe a lista de tarefas
 for tarefa in tarefas:
