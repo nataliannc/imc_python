@@ -10,7 +10,7 @@ crie um programa que tenha as opções:
     - sair do programa
 '''
 
-lista_de_pessoas = []
+lista_de_nomes = []
 
 while True:
 
@@ -28,45 +28,45 @@ while True:
 
     #cadastrar nome
     if opcao_usuario == "1":
-        nome = input("Informe o nome da pessoa:")
-        lista_de_pessoas.append(nome)
+        nome = input("Informe um nome para cadastrar:")
+        lista_de_nomes.append(nome)
         print("Nome cadastrado!")
 
     #listar nomes da lista
     elif opcao_usuario == "2":
-        for nome in lista_de_pessoas:
+        for nome in lista_de_nomes:
             print(nome)
 
     #pesquisar nomes na lista
     elif opcao_usuario == "3":
-        nome = input("Informe o nome da pessoa a ser pesquisada:")
-        if nome in lista_de_pessoas:
+        nome = input("Informe o nome a ser pesquisado:")
+        if nome in lista_de_nomes:
             print("Nome encontrado na lista.")
         else:
             print("Nome não encontrado na lista.")
 
     #ordenar a lista por odem alfabética
     elif opcao_usuario == "4":
-        lista_de_pessoas.sort()
-        for nome in lista_de_pessoas:
+        lista_de_nomes.sort()
+        for nome in lista_de_nomes:
             print(nome)
 
     #atualizar nomes da lista
     elif opcao_usuario == "5":
         nome_para_atualizar = input("Informe o nome que deseja alterar:")
-        if nome_para_atualizar in lista_de_pessoas:
+        if nome_para_atualizar in lista_de_nomes:
             nome_atualizado = input("Informe o novo nome:")
-            index = lista_de_pessoas.index(nome_para_atualizar)
-            lista_de_pessoas[index] = nome_atualizado
+            index = lista_de_nomes.index(nome_para_atualizar)
+            lista_de_nomes[index] = nome_atualizado
             print("Nome atualizado.")
         else:
             print("Nome não encontrado.")
 
     #deletar nomes da lista
     elif opcao_usuario == "6":
-        nome = input("informe o nome da pessoa a ser deletado:")
-        if nome in lista_de_pessoas:
-            lista_de_pessoas.remove(nome)
+        nome = input("Informe o nome a ser deletado:")
+        if nome in lista_de_nomes:
+            lista_de_nomes.remove(nome)
             print("Nome deletado.")
         else:
             print("Nome não encontrado.")
