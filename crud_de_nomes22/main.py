@@ -34,7 +34,8 @@ while True:
 
     #listar nomes da lista
     elif opcao_usuario == "2":
-        print(f"Nomes da lista: {lista_de_pessoas}")
+        for nome in lista_de_pessoas:
+            print(nome)
 
     #pesquisar nomes na lista
     elif opcao_usuario == "3":
@@ -47,7 +48,8 @@ while True:
     #ordenar a lista por odem alfabética
     elif opcao_usuario == "4":
         lista_de_pessoas.sort()
-        print(f"Lista em ordem alfabética:{lista_de_pessoas}")
+        for nome in lista_de_pessoas:
+            print(nome)
 
     #atualizar nomes da lista
     elif opcao_usuario == "5":
