@@ -15,12 +15,12 @@ lista_de_pessoas = []
 while True:
 
     print(f"{'='*20} AÇÕES DISPONÍVEIS {'='*20}\n")
-    print("Cadastrar (inserir) pessoa na lista: DIGITE 1")
-    print("Listar pessoas cadastradas: DIGITE 2")
-    print("Pesquisar o nome de uma pessoa: DIGITE 3")
+    print("Cadastrar/inserir nome: DIGITE 1")
+    print("Listar nomes cadastrados: DIGITE 2")
+    print("Pesquisar nomes: DIGITE 3")
     print("Ordenar a lista por ordem alfabética: DIGITE 4")
-    print("Atualizar o nome de uma pessoa: DIGITE 5")
-    print("Deletar o nome de uma pessoa: DIGITE 6")
+    print("Atualizar nome: DIGITE 5")
+    print("Deletar nome: DIGITE 6")
     print("Sair do programa: DIGITE 7")
     print(f"{'='*60}")
 
