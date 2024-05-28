@@ -53,7 +53,7 @@ while True:
 
     #atualizar nomes da lista
     elif opcao_usuario == "5":
-        nome_para_atualizar = input("Informe o nome que deseja alterar:")
+        nome_para_atualizar = input("Informe o nome a ser alterado:")
         if nome_para_atualizar in lista_de_nomes:
             nome_atualizado = input("Informe o novo nome:")
             index = lista_de_nomes.index(nome_para_atualizar)
