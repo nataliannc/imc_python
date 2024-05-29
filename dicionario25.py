@@ -15,15 +15,18 @@ O usuário deverá informar os dados da pessoa.
 O programa deverá exibir os dados da pessoa no console.
 """
 
-pessoa = {"nome","cpf","rg","Data de Nascimento","Gênero","E-mail","Telefone","Tipo sanguíneo","Profissão","Empresa"}
+pessoa = {
+    "Nome": input("Informe o nome:"),
+    "CPF": input("Informe o CPF:"),
+    "RG": input("Informe o RG:"),
+    "Data de Nascimento": input("Informe a data de nascimento:"),
+    "Gênero": input("Informe o gênero:"),
+    "E-mail": input("Informe o gênero:"),
+    "Telefone": input("Informe o telefone:"),
+    "Tipo sanguíneo": input("Informe o tipo sanguíneo:"),
+    "Profissão": input("Informe a profissão:"),
+    "Empresa": input("Informe a empresa:")
+}
 
-nome = input("Informe o nome:")
-cpf = input("Informe o CPF:")
-rg = input("Informe o RG:")
-datadenascimento = input("Informe a data de nascimento:")
-genero = input("Informe o gênero:")
-email = input("Informe o E-mail:")
-telefone = input("Informe o telefone:")
-tiposanguineo = input("Informe o tipo sanguíneo:")
-profissao = input("Informe a profissão:")
-empresa = input("Informe a empresa:")
+for chave in pessoa:
+    print(f"{chave}: {pessoa.get(chave)}")
