@@ -27,3 +27,11 @@ pessoas = [
 for pessoa in pessoas:
     for chave in pessoa:
         print(f"{chave}:{pessoa.get(chave)}")
+
+
+# campos = ("Nome", "CPF", "Telefone")
+# cadastros = []
+
+# cadastro[cadastro[0]]
+# cadastro[cadastro[1]]
+# cadastro[cadastro[2]]
