@@ -41,5 +41,8 @@ while True:
         base2 = int(input("Informe o valor da segunda base do trapézio:"))
         altura_trapezio = int(input("Informe o valor da altura do trapézio:"))
         print(f'A área do trapézio é {calcular_trapezio(base1, base2, altura_trapezio)}')
+    elif opcao == "4":
+        print("Você saiu do programa. Volte sempre!")
+        break
     else:
         print("Opção invalida!")
