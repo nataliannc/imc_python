@@ -6,7 +6,6 @@ import os
 
 def exibir_menu():
     print("Digite 1 para calcular a área de um círculo.")
-    print("\n")
     print("Digite 2 para calcular a área de um triângulo.")
     print("Digite 3 para calcular a área de um trapézio.")
     print("Digite 4 para sair do programa")
