@@ -6,6 +6,7 @@ import os
 
 def exibir_menu():
     print("Digite 1 para calcular a área de um círculo.")
+    print("\n")
     print("Digite 2 para calcular a área de um triângulo.")
     print("Digite 3 para calcular a área de um trapézio.")
     print("Digite 4 para sair do programa")
@@ -30,7 +31,7 @@ while True:
     os.system('cls')
 
     if opcao == "1":
-        raio = int(input('Informe a base do cículo:'))
+        raio = int(input('Informe a base do círculo:'))
         print(f'A área do círculo é {calcular_circulo(raio)}')
     elif opcao == "2":
         base_triangulo = int(input("Informe o valor da base do triângulo:"))
