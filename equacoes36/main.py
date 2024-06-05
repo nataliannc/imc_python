@@ -11,37 +11,44 @@ def exibir_menu():
     print("Digite 3 para sair do programa")
 
 def equacao_1(a,b):
-    equacao_primeiro_grau = (a * x) + b
-    return equacao_primeiro_grau
+    if a == 0:
+        if b == 0:
+            return "A equação é indeterminada."
+        else:
+            return "A equação não tem solução."
+    else:
+        x = -b/a
+        return f"O resultado é: x= {x}"
 def equacao_2(a,b,c):
     if a == 0:
-        return equacao_2(a,b,c)
+        return equacao_1(b,c)
     else:
         equacao_segundo_grau = (b**2) - 4*a*c
     if equacao_segundo_grau < 0:
-        return("Como delta é menor que zero, não existe raiz real. Portanto, não existe x1 e x2.")
+        return "Como delta é menor que zero, não existe raiz real. Portanto, não existe x1 e x2."
     elif equacao_segundo_grau == 0:
         x = -b/(2*a)
-        return(f"O resultado da equação do primeiro grau é {x}")
+        return f"O resultado da equação do primeiro grau é {x}"
     else:
         x1 = (-b + match.sqrt(equacao_segundo_grau) / (2*a))
         x2 = (-b - match.sqrt(equacao_segundo_grau) / (2*a))
-        return(f"Os resultados são: x1={x1} e x2={x2}")
+        return f"Os resultados são: x1={x1} e x2={x2}"
 
 while True:
     exibir_menu()
-    opcao = input("Digite o número da equação que você deseja resolver:")
+    opcao = input("Digite a opção desejada:")
 
     os.system("cls")
 
     if opcao == "1":
-        a = int(input("Informe o valor de a:"))
-        b = int(input("Informe o valor de b:"))
-        print(f"O resultado da equação do primeiro grau é {equacao_1(a, b)}")
+        a = float(input("Informe o valor de a:"))
+        b = float(input("Informe o valor de b:"))
+        resposta = equacao_1(a,b)
+        print(resposta)
     elif opcao == "2":
-        a = int(input("Informe o valor de a:"))
-        b = int(input("Informe o valor de b:"))
-        c = int(input("Informe o valor de c:"))
+        a = float(input("Informe o valor de a:"))
+        b = float(input("Informe o valor de b:"))
+        c = float(input("Informe o valor de c:"))
         resposta = equacao_2(a,b,c)
         print(resposta)
     elif opcao == "3":
