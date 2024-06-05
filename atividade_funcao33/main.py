@@ -25,7 +25,7 @@ def calcular_trapezio(base1, base2, altura_trapezio):
 
 while True:
     exibir_menu()
-    opcao = input("Qual área você deseja calcular:")
+    opcao = input("Digite o número da área que você deseja calcular:")
 
     os.system('cls')
 
