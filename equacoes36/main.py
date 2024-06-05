@@ -30,8 +30,8 @@ def equacao_2(a,b,c):
         x = -b/(2*a)
         return f"O resultado da equação do primeiro grau é {x}"
     else:
-        x1 = (-b + match.sqrt(equacao_segundo_grau) / (2*a))
-        x2 = (-b - match.sqrt(equacao_segundo_grau) / (2*a))
+        x1 = (-b + math.sqrt(equacao_segundo_grau) / (2*a))
+        x2 = (-b - math.sqrt(equacao_segundo_grau) / (2*a))
         return f"Os resultados são: x1={x1} e x2={x2}"
 
 while True:
