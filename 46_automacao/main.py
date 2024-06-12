@@ -4,13 +4,14 @@
 import pyautogui as auto
 import time
 
+#define espera para cada comando auto
 auto.PAUSE = 0.5
 
 #abre o menu iniciar
 auto.press("win")
 
 #abre o chrome
-auto.write("crome")
+auto.write("chrome")
 auto.press("enter")
 
 #maximizar tela
